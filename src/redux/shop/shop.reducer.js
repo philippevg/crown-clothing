@@ -5,7 +5,6 @@ const INITIAL_STATE = {
 };
 
 const shopReducer = (state = INITIAL_STATE, action) => {
-    console.log(state);
     switch (action.type) {
         default:
             return state;

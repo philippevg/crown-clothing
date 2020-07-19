@@ -17,8 +17,6 @@ import { selectCurrentUser } from "./redux/user/user.selector";
 class App extends React.Component {
     unsubscibeFromAuth = null;
 
-
-
     componentDidMount() {
         const { setCurrentUser, collectionsArray } = this.props;
 

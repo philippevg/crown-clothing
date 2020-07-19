@@ -17,8 +17,10 @@ import { selectCurrentUser } from "./redux/user/user.selector";
 class App extends React.Component {
     unsubscibeFromAuth = null;
 
+
+
     componentDidMount() {
-        const { setCurrentUser } = this.props;
+        const { setCurrentUser, collectionsArray } = this.props;
 
         this.unsubscibeFromAuth = auth.onAuthStateChanged(async userAuth => {
             if(userAuth) {
